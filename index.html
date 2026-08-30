@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bellini Bistro Italiano – Italian Restaurant in Phnom Penh</title>
+  <meta name="description" content="Bellini Bistro Italiano – authentic Italian cuisine, homemade limoncello, craft cocktails, and live concerts in a lush open-air garden in BKK1, Phnom Penh, Cambodia."/>
+  <meta name="keywords" content="Italian restaurant Phnom Penh, Italian food Cambodia, outdoor dining BKK1, Italian bistro Phnom Penh, authentic Italian cuisine Cambodia, garden restaurant Phnom Penh"/>
+  <meta property="og:title" content="Bellini Bistro Italiano – Italian Restaurant Phnom Penh"/>
+  <meta property="og:description" content="Authentic Italian bistro in BKK1, Phnom Penh. Homemade limoncello, craft cocktails, and seasonal live concerts in a lush garden."/>
+  <meta property="og:image" content="images/garden-entrance.jpg"/>
+  <meta property="og:type" content="restaurant"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your actual Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bellini Bistro Italiano",
+    "description": "Authentic Italian bistro in Phnom Penh, Cambodia. Founded by three Italians, featuring homemade limoncello, craft cocktails, and seasonal live concerts in a lush open-air garden in BKK1.",
+    "url": "https://bellinicambodia.com",
+    "telephone": "+85585464850",
+    "email": "belliniphnompenh@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#21, Street 306",
+      "addressLocality": "Boeng Keng Kang 1",
+      "addressRegion": "Phnom Penh",
+      "addressCountry": "KH"
+    },
+    "servesCuisine": ["Italian", "Mediterranean"],
+    "priceRange": "$$",
+    "menu": "https://bellinicambodia.com/menu.html",
+    "acceptsReservations": "True",
+    "hasMap": "https://maps.app.goo.gl/zo8gdK6bb6bvNwdA6",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:30",
+        "closes": "22:30"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/bellinicambodia",
+      "https://www.facebook.com/belliniphnompenh"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "50",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Live Music", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Bar", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Reservations", "value": true}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-nav.svg" alt="Bellini Bistro Italiano">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="reserve"><a href="reservations.html">Reserve a Table</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+  <a href="reservations.html">Reserve a Table</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/hero-entrance.jpg" alt="Bellini Bistro Italiano entrance at night, illuminated sign and lanterns among the trees, Phnom Penh" style="object-position:center 80%;"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">BKK1 &nbsp;·&nbsp; Phnom Penh &nbsp;·&nbsp; Cambodia</p>
+    <h1>Where Italy Meets<br/><em>the Tropics</em></h1>
+    <p>Authentic Italian cuisine · Craft cocktails · Live concerts</p>
+    <div class="hero-ctas">
+      <a href="reservations.html" class="btn btn-gold">Reserve a Table</a>
+      <a href="menu.html" class="btn btn-outline">View Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Italian Founders</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4.8★</div>
+      <div class="stat-label">TripAdvisor Rating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Open Daily</div>
+      <div class="stat-label">10:30 AM – 10:30 PM</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">BKK1</div>
+      <div class="stat-label">Street 306, Phnom Penh</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT SPLIT -->
+<div class="split">
+  <div class="split-text">
+    <p class="label">Our Story</p>
+    <h2 class="title">A Little Corner of Italy<br/>in Phnom Penh</h2>
+    <div class="divider"></div>
+    <p class="subtitle">Bellini was born from a simple idea — bring real Italian bistro culture to Cambodia. Three Italians, one lush garden, and an unwavering commitment to the food, drinks, and atmosphere they grew up with.</p>
+    <p class="subtitle" style="margin-top:16px;">From homemade limoncello and slow-cooked sauces to seasonal concerts under the stars, every evening at Bellini is a little slice of Italy in the heart of BKK1.</p>
+    <a href="about.html" class="btn btn-outline-dark" style="margin-top:32px;">Our Story</a>
+  </div>
+  <div class="split-img">
+    <img loading="lazy" src="images/garden-night.jpg" alt="Bellini garden at night with umbrellas and lush greenery"/>
+  </div>
+</div>
+
+<!-- SIGNATURE DISHES & DRINKS -->
+<div class="signatures-section">
+  <div class="container">
+    <p class="label" style="display:block; text-align:center;">The Essentials</p>
+    <h2 class="title title-light" style="text-align:center;">Our Signatures</h2>
+    <div class="divider" style="margin:18px auto;"></div>
+    <div class="signatures-grid">
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-carbonara.jpg" alt="Spaghetti alla Carbonara at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Pasta</div>
+          <div class="sig-name">Carbonara</div>
+          <div class="sig-desc">Guanciale, egg yolk, Pecorino Romano. The Roman classic, done properly.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-tiramisu.jpg" alt="Tiramisù at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Dessert</div>
+          <div class="sig-name">Tiramisù</div>
+          <div class="sig-desc">Made in-house. Mascarpone, espresso, Savoiardi. No shortcuts.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-espresso.jpg" alt="Italian espresso being pulled at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Coffee</div>
+          <div class="sig-name">Italian Espresso</div>
+          <div class="sig-desc">Real Italian roast, pulled properly. The way it should taste.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-limoncello.jpg" alt="Limoncello at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Digestivo</div>
+          <div class="sig-name">Limoncello</div>
+          <div class="sig-desc">Homemade. Ice cold. The only way to end a meal at Bellini.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-spritz.jpg" alt="Spritz cocktails at Bellini bar"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Cocktail</div>
+          <div class="sig-name">Spritz</div>
+          <div class="sig-desc">Aperol, Campari, or homemade limoncello with Prosecco and soda. The Italian aperitivo, every afternoon at Bellini.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-negroni.jpg" alt="Negroni being prepared at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Cocktail</div>
+          <div class="sig-name">Negroni</div>
+          <div class="sig-desc">Gin, Campari, sweet vermouth. Stirred, not shaken. A Bellini staple.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/sig-caprese.jpg" alt="Mozzarella Caprese at Bellini"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Vegetarian</div>
+          <div class="sig-name">Mozzarella Caprese</div>
+          <div class="sig-desc">Fresh mozzarella, ripe tomatoes, basil, extra virgin olive oil.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/lasagna-top.jpg" alt="Lasagne in cast iron skillet at Bellini, overhead view"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Pasta</div>
+          <div class="sig-name">Lasagna</div>
+          <div class="sig-desc">Pasta layers with béchamel and ragù sauce, baked in the pan.</div>
+        </div>
+      </div>
+      <div class="sig-item">
+        <img loading="lazy" src="images/prawn-diavola.jpg" alt="Prawn Diavola in cast iron pan at Bellini" style="object-position:center 70%;"/>
+        <div class="sig-overlay">
+          <div class="sig-category">Tapas</div>
+          <div class="sig-name">Diavola</div>
+          <div class="sig-desc">Spicy pan-fried shrimps in a fiery sauce.</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="menu.html" class="btn btn-outline">See the Full Menu</a>
+    </div>
+  </div>
+</div>
+
+<!-- FULL PHOTO / GARDEN -->
+<div class="full-photo">
+  <img loading="lazy" src="images/garden-day.jpg" alt="Bellini outdoor garden with bar and umbrellas in Phnom Penh"/>
+  <div class="overlay">
+    <div class="overlay-content">
+      <p class="label" style="justify-content:center; display:flex;">The Experience</p>
+      <h2>Dine Under the Canopy</h2>
+      <p>A lush tropical garden in the middle of the city. Whether you're here for a long lunch or a late dinner, the setting does half the work.</p>
+      <a href="gallery.html" class="btn btn-outline">See the Gallery</a>
+    </div>
+  </div>
+</div>
+
+<!-- EVENTS TEASER -->
+<div class="events-teaser">
+  <div class="events-photo">
+    <img loading="lazy" src="images/concert-toast.jpg" alt="Live concert night at Bellini — host speaking to a packed garden crowd with grand piano"/>
+  </div>
+  <div class="events-body">
+    <p class="label">Live Events</p>
+    <h2 class="title title-light">Concerts Under<br/>the Stars</h2>
+    <div class="divider"></div>
+    <p class="subtitle subtitle-light">Every dry season, Bellini transforms into Phnom Penh's most atmospheric concert venue. Jazz concerts, opera nights, classical piano evenings, and cultural performances — all in the open-air garden.</p>
+    <p class="subtitle subtitle-light" style="margin-top:12px;">Concert season runs every November through April.</p>
+    <a href="events.html" class="btn btn-gold" style="margin-top:32px;">See Past Events</a>
+  </div>
+</div>
+
+<!-- COCKTAIL STRIP -->
+<div class="cocktail-strip">
+  <div class="cocktail-body">
+    <p class="label">Bar & Cocktails</p>
+    <h2 class="title">Crafted With Italian Soul</h2>
+    <div class="divider"></div>
+    <p class="subtitle">From the signature Bellini cocktail to homemade limoncello and Italian classics like the Negroni — our bar is as Italian as the kitchen. Open all day, every day.</p>
+    <a href="menu.html#cocktails" class="btn btn-outline-dark" style="margin-top:32px;">Cocktail Menu</a>
+  </div>
+  <div class="cocktail-photo">
+    <img loading="lazy" src="images/cocktail.jpg" alt="Bartender crafting a cocktail at Bellini bar, Phnom Penh"/>
+  </div>
+</div>
+
+<!-- FIND US -->
+<div class="find-us">
+  <div class="container">
+    <p class="label" style="display:block; text-align:center;">Find Us</p>
+    <h2>#21, Street 306 &nbsp;·&nbsp; Boeng Keng Kang 1</h2>
+    <p style="margin-top:8px;">Phnom Penh, Cambodia</p>
+    <div class="hours-grid" id="hours-grid">
+      <div class="hours-block">
+        <div class="h-label">Bar &amp; Drinks</div>
+        <div class="h-time">Open Every Day &nbsp;·&nbsp; 10:30 AM – 10:30 PM</div>
+      </div>
+      <div class="hours-block">
+        <div class="h-label">Kitchen Hours</div>
+        <div class="h-time">10:30 AM – 2:00 PM &nbsp;&amp;&nbsp; 5:30 PM – 10:00 PM</div>
+      </div>
+      <div class="hours-block">
+        <div class="h-label">Grab Delivery</div>
+        <div class="h-time">11:15 AM – 1:45 PM &nbsp;&amp;&nbsp; 5:30 PM – 9:45 PM</div>
+      </div>
+    </div>
+    <a href="reservations.html" class="btn btn-gold">Reserve a Table</a>
+    <p style="margin-top:16px; font-size:13px;">Or message us on <a href="https://t.me/+85585464850" style="color:var(--gold);">Telegram</a> &nbsp;·&nbsp; <a href="mailto:belliniphnompenh@gmail.com" style="color:var(--gold);">Email</a></p>
+    <p style="margin-top:10px; font-size:13px;">Stay updated on events — <a href="https://t.me/bellinicambodia" target="_blank" style="color:var(--gold);">Join our Telegram Group</a></p>
+    <p style="margin-top:12px; font-size:13px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+      <a href="https://www.google.com/maps/search/Bellini+Bistro+Italiano+Phnom+Penh" target="_blank" style="color:var(--gold);">Google Maps</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g293940-d27138714-Reviews-Bellini_Phnom_Penh-Phnom_Penh.html" target="_blank" style="color:var(--gold);">TripAdvisor</a>
+      <a href="https://wanderlog.com/place/details/9799487/bellini-italian-bistro--cocktail-bar" target="_blank" style="color:var(--gold);">Wanderlog</a>
+    </p>
+  </div>
+</div>
+
+<script>
+fetch('content.json')
+  .then(function(r){return r.json();})
+  .then(function(data){
+    var h=data.hours;
+    function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+    document.getElementById('hours-grid').innerHTML=
+      '<div class="hours-block"><div class="h-label">Bar &amp; Drinks</div><div class="h-time">'+esc(h.bar)+'</div></div>'
+      +'<div class="hours-block"><div class="h-label">Kitchen Hours</div><div class="h-time">'+esc(h.kitchen)+'</div></div>'
+      +'<div class="hours-block"><div class="h-label">Grab Delivery</div><div class="h-time">'+esc(h.grab)+'</div></div>';
+  })
+  .catch(function(){});
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img loading="lazy" src="images/logo.png" alt="Bellini Bistro Italiano" style="width:130px; border-radius:4px; margin-bottom:16px;"/>
+        <p>Authentic Italian cuisine, craft cocktails, and live concerts in a lush open-air garden in the heart of BKK1, Phnom Penh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Bar: Daily 10:30 AM – 10:30 PM</p>
+        <p>Kitchen: 10:30 AM – 2 PM</p>
+        <p>& 5:30 PM – 10 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>#21, Street 306</p>
+        <p>Boeng Keng Kang 1</p>
+        <p>Phnom Penh, Cambodia</p>
+        <p style="margin-top:10px;"><a href="tel:+85585464850" style="color:rgba(255,255,255,0.4);">+855 85 464 850</a></p>
+        <p><a href="mailto:belliniphnompenh@gmail.com" style="color:rgba(255,255,255,0.4);">belliniphnompenh@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="copyright-year">2026</span> Bellini Bistro Italiano. All rights reserved.</span><script>document.getElementById("copyright-year").textContent=new Date().getFullYear();</script>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/bellinicambodia" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/belliniphnompenh" target="_blank">Facebook</a>
+        <a href="https://t.me/+85585464850" target="_blank">Telegram</a>
+        <a href="https://t.me/bellinicambodia" target="_blank">Telegram Group</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.06); font-size:11px; color:rgba(255,255,255,0.25);">
+      Website design by <a href="https://t.me/+85577749922" target="_blank" style="color:rgba(255,255,255,0.45); text-decoration:none;">Kunthea</a> &nbsp;·&nbsp; <a href="mailto:teabkunthea@gmail.com" style="color:rgba(255,255,255,0.45); text-decoration:none;">teabkunthea@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events – Bellini Bistro Italiano | Live Concerts Phnom Penh</title>
+  <meta name="description" content="Bellini hosts open-air jazz, classical piano, opera, and cultural concerts every dry season (November–April) in their lush open-air garden in BKK1, Phnom Penh. One of Cambodia's most unique dining experiences."/>
+  <meta name="keywords" content="live jazz concert Phnom Penh, classical music dinner Cambodia, outdoor concert Phnom Penh, live music restaurant BKK1, Bellini concert season"/>
+  <meta property="og:title" content="Bellini Events – Live Concerts in the Garden, Phnom Penh"/>
+  <meta property="og:image" content="images/jazz-concert.jpg"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your actual Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-nav.svg" alt="Bellini Bistro Italiano">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="events.html" class="active">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="reserve"><a href="reservations.html">Reserve a Table</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+  <a href="reservations.html">Reserve a Table</a>
+</div>
+
+<!-- BANNER -->
+<div class="page-banner">
+  <img src="images/concert-crowd-garden.jpg" alt="Full crowd at Bellini concert night — packed outdoor garden"/>
+  <div class="overlay"></div>
+  <div class="banner-text">
+    <p class="eyebrow">November – April</p>
+    <h1>Live Events</h1>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="events-hero-strip">
+  <div class="container" style="text-align:center;">
+    <p class="label" style="display:block;">Bellini Concert Season</p>
+    <h2 class="title title-light">Music in the Garden</h2>
+    <div class="divider" style="margin:18px auto;"></div>
+    <p class="subtitle subtitle-light" style="margin:0 auto;">Every dry season, Bellini transforms its garden into one of Phnom Penh's most atmospheric concert venues. Jazz concerts, opera nights, classical piano evenings, and cultural performances — all under the open sky, surrounded by tropical greenery, good food, and great drinks.</p>
+    <p class="subtitle subtitle-light" style="margin:16px auto 0;">No two evenings are the same. But every one is worth showing up for.</p>
+  </div>
+</div>
+
+<div id="past-events-content"></div>
+
+<!-- GALLERY -->
+<div style="padding:4px 0 0;">
+  <div class="events-gallery">
+    <div class="event-thumb">
+      <img loading="lazy" src="images/concert-piano-aerial.jpg" alt="Grand piano concert aerial view at Bellini — red carpet and audience"/>
+    </div>
+    <div class="event-thumb">
+      <img loading="lazy" src="images/concert-jazz-band.jpg" alt="Jazz band performing live at Bellini garden, Phnom Penh"/>
+    </div>
+    <div class="event-thumb">
+      <img loading="lazy" src="images/concert-guests.jpg" alt="Guests toasting with wine at a Bellini concert evening"/>
+    </div>
+    <div class="event-thumb">
+      <img loading="lazy" src="images/concert-aerial-blue.jpg" alt="Concert aerial view with blue stage lighting at Bellini"/>
+    </div>
+    <div class="event-thumb">
+      <img loading="lazy" src="images/concert-crowd-garden.jpg" alt="Packed garden crowd at Bellini concert night"/>
+    </div>
+  </div>
+</div>
+
+<div id="events-dynamic-content"></div>
+
+<script>
+(function(){
+  function e(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  fetch('content.json')
+    .then(function(r){return r.json();})
+    .then(function(data){
+      var ev=data.events;
+      // Past events (alternating layout)
+      var ph=ev.pastEvents.map(function(evt,i){
+        var imgLeft=i%2===0;
+        var imgDiv='<div class="events-season-img"><img loading="lazy" src="images/'+e(evt.image)+'" alt="'+e(evt.imageAlt)+'"/></div>';
+        var textStyle=imgLeft?'':'background:var(--cream);';
+        var textDiv='<div class="events-season-text" style="'+textStyle+'">'
+          +'<p class="label">'+e(evt.label)+'</p>'
+          +'<h2 class="title">'+e(evt.title)+'</h2>'
+          +'<div class="divider"></div>'
+          +(evt.text1?'<p class="subtitle">'+e(evt.text1)+'</p>':'')
+          +(evt.text2?'<p class="subtitle" style="margin-top:14px">'+e(evt.text2)+'</p>':'')
+          +'</div>';
+        var inner=imgLeft?imgDiv+textDiv:textDiv+imgDiv;
+        return '<div class="events-season"'+(i>0?' style="margin-top:2px"':'')+'>'+inner+'</div>';
+      }).join('');
+      document.getElementById('past-events-content').innerHTML=ph;
+      // Reservation block + next season
+      var res=ev.showReservationBlock
+        ?'<div class="event-res-block"><div class="container">'
+          +'<p class="label" style="display:block;text-align:center">Concert Season</p>'
+          +'<h2>Reserve Your Seat</h2>'
+          +'<p>Tables for concert evenings fill up fast — sometimes within hours of the announcement. To secure your spot, message us directly with your preferred date and number of guests.</p>'
+          +'<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">'
+          +'<a href="https://t.me/+85585464850" target="_blank" class="btn btn-gold">Reserve via Telegram</a>'
+          +'<a href="mailto:belliniphnompenh@gmail.com" class="btn btn-outline-dark">Reserve via Email</a>'
+          +'</div></div></div>'
+        :'';
+      var season='<div class="next-season"><div class="container">'
+        +'<p class="label" style="display:block;text-align:center">Coming Soon</p>'
+        +'<div class="season-badge">'+e(ev.nextSeasonBadge)+'</div>'
+        +'<h2>'+e(ev.nextSeasonHeading)+'</h2>'
+        +'<p>'+e(ev.nextSeasonText)+'</p>'
+        +'<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">'
+        +'<a href="https://0715779b.sibforms.com/serve/MUIFALyoBQd-WuC4wV-SnUyncTHAl1254fCsoOR_DX8gO0E2s-AkSwWCYMW_Iv1xG-ZW041gdBX5BMSEROG6j3ky2Su0L9hCuOTQWM92hj773xW9vub5k4N7Wo9-hPWc7txO0kxHMVeZKZn3ltKBXPNJl3DTIietpQBgLqKDLvVMUQFxYesm50b2ugopBZs73zGwpg2Pn6BZgIH0cw==" target="_blank" class="btn btn-gold">Join the Event Mailing List</a>'
+        +'<a href="https://www.facebook.com/belliniphnompenh/events" target="_blank" class="btn btn-outline">See All Past Events on Facebook</a>'
+        +'<a href="reservations.html" class="btn btn-outline">Reserve a Table</a>'
+        +'</div></div></div>';
+      document.getElementById('events-dynamic-content').innerHTML=res+season;
+    })
+    .catch(function(){
+      document.getElementById('events-dynamic-content').innerHTML='<div class="next-season"><div class="container"><p>Content temporarily unavailable. Please refresh.</p></div></div>';
+    });
+})();
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img loading="lazy" src="images/logo.png" alt="Bellini Bistro Italiano" style="width:130px; border-radius:4px; margin-bottom:16px;"/>
+        <p>Authentic Italian cuisine, craft cocktails, and live concerts in a lush open-air garden in the heart of BKK1, Phnom Penh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Bar: Daily 10:30 AM – 10:30 PM</p>
+        <p>Kitchen: 10:30 AM – 2 PM</p>
+        <p>& 5:30 PM – 10 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>#21, Street 306</p>
+        <p>Boeng Keng Kang 1</p>
+        <p>Phnom Penh, Cambodia</p>
+        <p style="margin-top:10px;"><a href="tel:+85585464850" style="color:rgba(255,255,255,0.4);">+855 85 464 850</a></p>
+        <p><a href="mailto:belliniphnompenh@gmail.com" style="color:rgba(255,255,255,0.4);">belliniphnompenh@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="copyright-year">2026</span> Bellini Bistro Italiano. All rights reserved.</span><script>document.getElementById("copyright-year").textContent=new Date().getFullYear();</script>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/bellinicambodia" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/belliniphnompenh" target="_blank">Facebook</a>
+        <a href="https://t.me/+85585464850" target="_blank">Telegram</a>
+        <a href="https://t.me/bellinicambodia" target="_blank">Telegram Group</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.06); font-size:11px; color:rgba(255,255,255,0.25);">
+      Website design by <a href="https://t.me/+85577749922" target="_blank" style="color:rgba(255,255,255,0.45); text-decoration:none;">Kunthea</a> &nbsp;·&nbsp; <a href="mailto:teabkunthea@gmail.com" style="color:rgba(255,255,255,0.45); text-decoration:none;">teabkunthea@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

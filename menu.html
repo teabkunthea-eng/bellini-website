@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu – Bellini Bistro Italiano | Italian Food Phnom Penh</title>
+  <meta name="description" content="Explore Bellini's full menu — pasta, Italian mains, tapas, desserts, cocktails and wines. Authentic Italian cuisine in BKK1, Phnom Penh."/>
+  <meta property="og:title" content="Bellini Menu – Authentic Italian Cuisine Phnom Penh"/>
+  <meta property="og:image" content="images/food-spread.jpg"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your actual Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <style>
+    .promo-strip {
+      background: var(--dark);
+      padding: 18px 0;
+      text-align: center;
+    }
+    .promo-strip .promos {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .promo-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .promo-badge {
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 22px;
+      border-radius: 6px;
+      padding: 4px 12px;
+      line-height: 1.2;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .promo-text {
+      text-align: left;
+    }
+    .promo-text strong {
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .promo-text span {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+    }
+    .menu-sub-heading {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin: 32px 0 14px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .menu-sub-heading:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .tag.vegan  { background:#e8f5e9; color:#2e7d32; }
+    .tag.premium { background:#fff8e1; color:#b8860b; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-nav.svg" alt="Bellini Bistro Italiano">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="reserve"><a href="reservations.html">Reserve a Table</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+  <a href="reservations.html">Reserve a Table</a>
+</div>
+
+<!-- BANNER -->
+<div class="page-banner">
+  <img src="images/food-spread.jpg" alt="Bellini Italian dishes spread — pasta, gnocchi, lasagne"/>
+  <div class="overlay"></div>
+  <div class="banner-text">
+    <p class="eyebrow">Authentic Italian</p>
+    <h1>Our Menu</h1>
+  </div>
+</div>
+
+<!-- ══ PROMO STRIP — update the discount text here if deals change ══ -->
+<div class="promo-strip">
+  <div class="container">
+    <div class="promos">
+      <div class="promo-item">
+        <div class="promo-badge">30%</div>
+        <div class="promo-text">
+          <strong>Lunch Discount</strong>
+          <span>Tapas, Pasta, Salads, Mains &amp; Desserts — Mon to Fri</span>
+        </div>
+      </div>
+      <div class="promo-item">
+        <div class="promo-badge">30%</div>
+        <div class="promo-text">
+          <strong>Happy Hour — 4 to 6 PM</strong>
+          <span>Cocktails, Whiskeys, Wine &amp; Beer — Every day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MENU NAV TABS -->
+<div class="menu-nav">
+  <div class="menu-nav-inner">
+    <a href="#starters" class="menu-tab">Tapas &amp; Salads</a>
+    <a href="#pasta" class="menu-tab">Pasta</a>
+    <a href="#mains" class="menu-tab">Mains</a>
+    <a href="#desserts" class="menu-tab">Desserts</a>
+    <a href="#cocktails" class="menu-tab">Cocktails</a>
+    <a href="#wines" class="menu-tab">Wines &amp; Drinks</a>
+  </div>
+</div>
+
+<!-- MENU CONTENT -->
+<div class="section">
+  <div class="container">
+
+    <!-- ============================================================
+         HOW TO UPDATE THE MENU
+         - To change a dish name: find the text inside <h4>...</h4> and edit it
+         - To change a description: find the text inside <p>...</p> and edit it
+         - To change a price: find the text inside <span class="item-price">...</span>
+         - To add a new dish: copy one full <div class="menu-item">...</div> block
+           and paste it inside the same category, then change the text
+         - To remove a dish: delete the full <div class="menu-item">...</div> block
+         - To add a tag: add <span class="tag">Your label</span> inside <div class="item-info">
+         - Available tag styles: class="tag vegan" or class="tag premium"
+    ============================================================ -->
+
+    <!-- ── TAPAS & SALADS — edit dish names, descriptions, and prices below ── -->
+    <div class="menu-category" id="starters">
+      <p class="label">To Begin</p>
+      <h2>Tapas &amp; Salads</h2>
+      <p class="cat-note">Light bites and sharing plates to start — best with a cold drink in hand.</p>
+      <div class="menu-items">
+
+        <p class="menu-sub-heading">Tapas</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Bruschetta al Pomodoro</h4>
+            <p>Toasted bread with fresh tomato</p>
+          </div>
+          <span class="item-price">$4</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Bruschetta alle Acciughe</h4>
+            <p>Toasted bread with anchovies</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Cheesy Garlic Bread</h4>
+            <p>Warm toasted bread with garlic butter and melted cheese</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Burrata al Pesto</h4>
+            <p>Fresh burrata served with house-made basil pesto</p>
+          </div>
+          <span class="item-price">$9</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Panino alla Bolognese</h4>
+            <p>Soft roll with slow-cooked Bolognese ragù</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Carpaccio di Manzo</h4>
+            <p>Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing</p>
+          </div>
+          <span class="item-price">$10</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Feta &amp; Olives</h4>
+            <p>Greek feta cheese with marinated olives</p>
+          </div>
+          <span class="item-price">$3.8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Shrimps alla Diavola</h4>
+            <p>Spicy pan-fried shrimps in a fiery sauce</p>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Mozzarella Sticks</h4>
+            <p>Golden fried mozzarella sticks</p>
+          </div>
+          <span class="item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>French Fries</h4>
+            <p>Classic, with rosemary salt, or with parmesan</p>
+          </div>
+          <span class="item-price">$4 – $5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Balsamic Salad</h4>
+            <p>Fresh greens with aged balsamic dressing</p>
+          </div>
+          <span class="item-price">$4</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Extra Warm Bread</h4>
+            <p>House-baked bread served warm</p>
+          </div>
+          <span class="item-price">$1.3</span>
+        </div>
+
+        <p class="menu-sub-heading">Sharing &amp; Salads</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Italian Board</h4>
+            <p>Selection of Italian cured meats, cheeses, olives and bread</p>
+            <span class="tag">Great for sharing</span>
+          </div>
+          <span class="item-price">$16</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Italian Mixed Caprese</h4>
+            <p>Mozzarella, tomato, prosciutto, salami, olives and grilled vegetables</p>
+            <span class="tag">Great for sharing</span>
+          </div>
+          <span class="item-price">$23</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Mozzarella Caprese</h4>
+            <p>Fresh mozzarella, ripe tomatoes, basil, extra virgin olive oil</p>
+          </div>
+          <span class="item-price">$9</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Caesar Salad</h4>
+            <p>Romaine lettuce, parmesan, croutons, Caesar dressing</p>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Greek Salad</h4>
+            <p>Tomatoes, cucumber, red onion, feta, kalamata olives, oregano</p>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── PASTA SECTION — edit dish names, descriptions, and prices below ── -->
+    <div class="menu-category" id="pasta">
+      <p class="label">Made Fresh</p>
+      <h2>Pasta</h2>
+      <p class="cat-note">All pasta is prepared fresh daily by Chef Michele from Volterra, Tuscany.</p>
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spaghetti alla Carbonara</h4>
+            <p>Italian pork cheek 'guanciale', eggs, black pepper — the real Roman way</p>
+            <span class="tag">No cream. Ever.</span>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tagliatelle alla Bolognese</h4>
+            <p>Traditional slow-cooked meat ragù sauce</p>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Lasagna</h4>
+            <p>Pasta layers with béchamel and ragù sauce, baked in the pan</p>
+            <span class="tag">House Classic</span>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Gnocchi Gratinati Emiliane</h4>
+            <p>Potato dumplings baked in Bolognese sauce</p>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spaghetti alla Vongole (Clams)</h4>
+            <p>Garlic, olive oil, fresh clams, white wine</p>
+          </div>
+          <span class="item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spaghetti al Nero di Seppia</h4>
+            <p>Squid ink pasta with calamari in a rich seafood sauce</p>
+            <span class="tag">Signature Dish</span>
+          </div>
+          <span class="item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Gnocchi alla Pesce San Pietro</h4>
+            <p>John Dory fish baked with gnocchi in garlic and white wine</p>
+          </div>
+          <span class="item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Gnocchi Sorrentina</h4>
+            <p>Oven-baked gnocchi with tomato sauce and mozzarella</p>
+            <span class="tag vegan">Vegetarian</span>
+          </div>
+          <span class="item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tagliatelle Porcini Mushrooms &amp; Truffle</h4>
+            <p>Italian porcini mushrooms and black truffle sauce</p>
+            <span class="tag premium">Premium</span>
+          </div>
+          <span class="item-price">$15</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spaghetti Pesto &amp; Sun Dried Tomatoes</h4>
+            <p>House-made basil pesto with sun-dried tomatoes</p>
+            <span class="tag vegan">Vegan</span>
+          </div>
+          <span class="item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Gnocchi Ortolana</h4>
+            <p>Potato gnocchi baked with fresh oven-roasted vegetables</p>
+            <span class="tag vegan">Vegan</span>
+          </div>
+          <span class="item-price">$10</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Penne al Sugo</h4>
+            <p>Classic slow-cooked tomato sauce</p>
+            <span class="tag vegan">Vegan</span>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spaghetti Aglio, Olio &amp; Peperoncino</h4>
+            <p>Garlic, olive oil and chilli — the original "midnight spaghetti"</p>
+            <span class="tag vegan">Vegan</span>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+
+        <!-- PASTA EXTRAS -->
+        <div class="menu-item" style="background:var(--cream); border-radius:6px; padding:12px 16px; margin-top:8px;">
+          <div class="item-info">
+            <h4 style="font-size:13px; color:var(--text-light);">Add-ons</h4>
+            <p style="font-size:13px;">Extra sliced truffle (3g) &nbsp;·&nbsp; Extra Bolognese sauce</p>
+          </div>
+          <span class="item-price" style="font-size:13px; white-space:nowrap;">$5 &nbsp;·&nbsp; $2.5</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── MAINS SECTION — edit dish names, descriptions, and prices below ── -->
+    <div class="menu-category" id="mains">
+      <p class="label">Meat &amp; Fish</p>
+      <h2>Mains</h2>
+      <p class="cat-note">From the grill and the pan — dishes that anchor the table.</p>
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Italian Cheeseburger</h4>
+            <p>150g prime beef, pickles, caramelised onions, bacon, melted provolone, french fries</p>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Prosecco Lemon Dory</h4>
+            <p>White fish cooked in prosecco and lemon sauce</p>
+          </div>
+          <span class="item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Fritto Misto</h4>
+            <p>Lightly floured deep-fried mixed seafood</p>
+          </div>
+          <span class="item-price">$16</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Stracotto alla Fiorentina</h4>
+            <p>Traditional 'overcooked' ribeye beef stew — slow-braised Florentine style</p>
+          </div>
+          <span class="item-price">$16</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Carpaccio di Manzo (Cold)</h4>
+            <p>Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing</p>
+          </div>
+          <span class="item-price">$10</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Chicken Milanese</h4>
+            <p>Breaded and deep-fried chicken fillet</p>
+          </div>
+          <span class="item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Scaloppine al Vino Bianco</h4>
+            <p>Thin pork escalopes in a delicious white wine sauce</p>
+          </div>
+          <span class="item-price">$14</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── DESSERTS SECTION — edit dish names, descriptions, and prices below ── -->
+    <div class="menu-category" id="desserts">
+      <p class="label">To Finish</p>
+      <h2>Desserts</h2>
+      <p class="cat-note">End on a sweet note — or a shot of homemade limoncello.</p>
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tiramisù</h4>
+            <p>Imported pavesini biscuits soaked in espresso, mascarpone cream, cocoa powder</p>
+            <span class="tag">House Recipe</span>
+          </div>
+          <span class="item-price">$6.5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Panna Cotta</h4>
+            <p>Smooth creamy dessert topped with chocolate, caramel, or strawberry reduction</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Affogato</h4>
+            <p>Vanilla ice cream "drowned" with a shot of hot espresso</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Profiteroles</h4>
+            <p>Light choux pastry filled with cream, topped with warm melted chocolate</p>
+          </div>
+          <span class="item-price">$5.5</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── COCKTAILS SECTION — edit cocktail names, descriptions, and prices below ── -->
+    <div class="menu-category" id="cocktails">
+      <p class="label">Bar Menu</p>
+      <h2>Cocktails</h2>
+      <p class="cat-note">The bar is open all day. Happy hour: 30% off cocktails, 4–6 PM daily.</p>
+      <div class="menu-items">
+
+        <p class="menu-sub-heading">Italian Cocktails</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Aperol Spritz</h4>
+            <p>Aperol, prosecco, soda, orange slice</p>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Campari Spritz</h4>
+            <p>Campari, prosecco, soda, orange slice</p>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Limoncello Spritz</h4>
+            <p>Home-made limoncello, prosecco, soda, lemon slice</p>
+            <span class="tag">Made in-house</span>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Elderflower Spritz</h4>
+            <p>Elderflower liqueur, mint, prosecco, soda</p>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Classic Bellini</h4>
+            <p>Peach crush, peach liqueur, prosecco — the cocktail we're named after</p>
+            <span class="tag">Signature</span>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Passion Bellini</h4>
+            <p>Fresh passion juice, homemade passion purée, prosecco</p>
+          </div>
+          <span class="item-price">$6.5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>French Seventy Five</h4>
+            <p>Gin, fresh lime juice, sugar syrup, prosecco</p>
+          </div>
+          <span class="item-price">$6.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Mimosa Royale</h4>
+            <p>Grand Marnier, fresh orange juice, prosecco</p>
+          </div>
+          <span class="item-price">$6.8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>The Martini</h4>
+            <p>Gin or vodka, dry vermouth, lime juice, olives</p>
+          </div>
+          <span class="item-price">$7 / $9</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Passion Martini</h4>
+            <p>Vodka, fresh passion juice, homemade passion purée, lime juice</p>
+          </div>
+          <span class="item-price">$6.5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Peach Martini</h4>
+            <p>Vodka, peach crush, peach liqueur, fresh lime juice</p>
+          </div>
+          <span class="item-price">$6.5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Espresso Martini</h4>
+            <p>Vodka, espresso, coffee liqueur, coffee beans</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+
+        <p class="menu-sub-heading">Classics &amp; Signature</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Negroni</h4>
+            <p>Gin, Campari, sweet vermouth — stirred, not shaken</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Old Fashioned</h4>
+            <p>Bourbon, bitters, sugar, orange peel</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Boulevardier</h4>
+            <p>Bourbon, Campari, sweet vermouth</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Almond Sour</h4>
+            <p>Amaretto, lemon juice, egg white, foam</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Whiskey Sour</h4>
+            <p>Bourbon, lemon juice, sugar syrup, egg white</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Matcha Sour</h4>
+            <p>Vodka, matcha, lemon juice, egg white</p>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tamarind Dam</h4>
+            <p>Rum, tamarind, lime, chilli rim</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Liquid Gold</h4>
+            <p>Ask your bartender — Chenda's signature creation</p>
+            <span class="tag">Bartender's Favourite</span>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+
+        <p class="menu-sub-heading">Margaritas</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Classic Margarita</h4>
+            <p>Tequila, triple sec, fresh lime juice, salt rim</p>
+          </div>
+          <span class="item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Cadillac Margarita</h4>
+            <p>Premium tequila, Grand Marnier, fresh lime</p>
+          </div>
+          <span class="item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Spicy Passion Margarita</h4>
+            <p>Tequila, passion fruit, fresh chilli, lime</p>
+          </div>
+          <span class="item-price">$8</span>
+        </div>
+
+        <p class="menu-sub-heading">Mocktails</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Virgin Spritz</h4>
+            <p>Pineapple jam, fresh passion juice, lemon juice, sun-dried lemon, soda</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tea Passion</h4>
+            <p>Chinese oolong tea, elderflower syrup, fresh passion, fresh lime juice</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Naughty Peach</h4>
+            <p>Peach reduction, lime, ginger, mint leaves, grenadine, soda</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── WINES & DRINKS SECTION — edit drink names, descriptions, and prices below ── -->
+    <div class="menu-category" id="wines">
+      <p class="label">Drinks</p>
+      <h2>Wines &amp; Drinks</h2>
+      <p class="cat-note">Italian wines by the glass or bottle, draft beer, coffee and soft drinks. Happy hour 4–6 PM: 30% off wine, beer and whiskeys.</p>
+      <div class="menu-items">
+
+        <p class="menu-sub-heading">Beer</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tiger Draft</h4>
+            <p>Cold draft beer on tap</p>
+          </div>
+          <span class="item-price">$2.7</span>
+        </div>
+
+        <p class="menu-sub-heading">House Wines — by the Glass</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Sangiovese</h4>
+            <p>Light Italian red — pairs well with pasta and mains</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Montepulciano</h4>
+            <p>Smooth, medium-bodied red from Abruzzo</p>
+          </div>
+          <span class="item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Chardonnay</h4>
+            <p>Crisp Italian white — great with seafood and light pasta</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Trebbiano</h4>
+            <p>Dry Italian white with a clean finish</p>
+          </div>
+          <span class="item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Prosecco</h4>
+            <p>Italian sparkling wine by the glass</p>
+          </div>
+          <span class="item-price">$6 / $7</span>
+        </div>
+
+        <p class="menu-sub-heading">Bottle Wines — Red</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Primo Sangiovese Merlot</h4>
+          </div>
+          <span class="item-price">$29</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Fantini Montepulciano d'Abruzzo</h4>
+          </div>
+          <span class="item-price">$29</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Don Giovanni Chianti Classico</h4>
+          </div>
+          <span class="item-price">$36</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Don Camillo Terre di Chieti</h4>
+          </div>
+          <span class="item-price">$40</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Edizione Cinque Autoctoni</h4>
+            <p>Rated 99 points — 5 grape varieties, complex and rich</p>
+            <span class="tag premium">Premium</span>
+          </div>
+          <span class="item-price">$53</span>
+        </div>
+
+        <p class="menu-sub-heading">Bottle Wines — White &amp; Rosé</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Primo Malvasia Chardonnay</h4>
+          </div>
+          <span class="item-price">$32</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Fantini Trebbiano d'Abruzzo</h4>
+          </div>
+          <span class="item-price">$32</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Edizione Pecorino Fiano Grillo</h4>
+          </div>
+          <span class="item-price">$42</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Fantini Cerasuolo d'Abruzzo</h4>
+            <p>Rosé</p>
+          </div>
+          <span class="item-price">$32</span>
+        </div>
+
+        <p class="menu-sub-heading">Prosecco — by the Bottle</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Prosecco Astoria Butterfly</h4>
+          </div>
+          <span class="item-price">$28</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Prosecco Fantini Butterfly</h4>
+          </div>
+          <span class="item-price">$30</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Brand Claire Fantini</h4>
+          </div>
+          <span class="item-price">$34</span>
+        </div>
+
+        <p class="menu-sub-heading">Coffee &amp; Tea</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Espresso</h4>
+          </div>
+          <span class="item-price">$2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Macchiato</h4>
+          </div>
+          <span class="item-price">$2.2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Americano</h4>
+          </div>
+          <span class="item-price">$2.8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Cappuccino</h4>
+          </div>
+          <span class="item-price">$2.8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Latte</h4>
+          </div>
+          <span class="item-price">$2.8</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Corretto</h4>
+            <p>Espresso with a shot of Sambuca or Grappa</p>
+          </div>
+          <span class="item-price">$3</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Tea — Ice or Hot</h4>
+          </div>
+          <span class="item-price">$2</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Decaffeinated coffee</h4>
+            <p>Available for all coffee drinks</p>
+          </div>
+          <span class="item-price">+$0.5</span>
+        </div>
+
+        <p class="menu-sub-heading">Water &amp; Soft Drinks</p>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Acqua Panna (750ml)</h4>
+            <p>Still mineral water</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>San Pellegrino (750ml)</h4>
+            <p>Sparkling mineral water</p>
+          </div>
+          <span class="item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Orange Juice</h4>
+          </div>
+          <span class="item-price">$2.3</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Peach-Pineapple Juice</h4>
+          </div>
+          <span class="item-price">$2.3</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Passion Juice (Fresh)</h4>
+          </div>
+          <span class="item-price">$3</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <h4>Sodas</h4>
+          </div>
+          <span class="item-price">$2.2</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="menu-note-box">
+      <strong>Please note:</strong> All prices are subject to a 5% service charge. Menu items and prices are subject to change. We have vegan and vegetarian options available — look for the tags. Allergen information available on request.
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img loading="lazy" src="images/logo.png" alt="Bellini Bistro Italiano" style="width:130px; border-radius:4px; margin-bottom:16px;"/>
+        <p>Authentic Italian cuisine, craft cocktails, and live concerts in a lush open-air garden in the heart of BKK1, Phnom Penh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Bar: Daily 10:30 AM – 10:30 PM</p>
+        <p>Kitchen: 10:30 AM – 2 PM</p>
+        <p>&amp; 5:30 PM – 10 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>#21, Street 306</p>
+        <p>Boeng Keng Kang 1</p>
+        <p>Phnom Penh, Cambodia</p>
+        <p style="margin-top:10px;"><a href="tel:+85585464850" style="color:rgba(255,255,255,0.4);">+855 85 464 850</a></p>
+        <p><a href="mailto:belliniphnompenh@gmail.com" style="color:rgba(255,255,255,0.4);">belliniphnompenh@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="copyright-year">2026</span> Bellini Bistro Italiano. All rights reserved.</span><script>document.getElementById("copyright-year").textContent=new Date().getFullYear();</script>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/bellinicambodia" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/belliniphnompenh" target="_blank">Facebook</a>
+        <a href="https://t.me/+85585464850" target="_blank">Telegram</a>
+        <a href="https://t.me/bellinicambodia" target="_blank">Telegram Group</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.06); font-size:11px; color:rgba(255,255,255,0.25);">
+      Website design by <a href="https://t.me/+85577749922" target="_blank" style="color:rgba(255,255,255,0.45); text-decoration:none;">Kunthea</a> &nbsp;·&nbsp; <a href="mailto:teabkunthea@gmail.com" style="color:rgba(255,255,255,0.45); text-decoration:none;">teabkunthea@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
