@@ -14,6 +14,11 @@
       "badge": "30%",
       "title": "Happy Hour — 4 to 6 PM",
       "detail": "Cocktails, Whiskeys, Wine & Beer — Every day"
+    },
+    {
+      "badge": "NEW",
+      "title": "Bi-Weekly Specials",
+      "detail": "New dishes and drinks every two weeks — ask us when you visit"
     }
   ],
   "events": {
