@@ -274,7 +274,9 @@ footer { background:#111; padding:56px 0 32px; }
   .stat-item { border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); width:50%; }
 }
 @media (max-width:600px) {
-  .hero h1 { font-size:36px; }
+  /* fluid so "Where Italy Meets" stays on one line down to ~320px,
+     Montserrat is wider than the old Playfair Display */
+  .hero h1 { font-size:clamp(24px, 8.6vw, 36px); }
   .full-photo .overlay-content h2 { font-size:32px; }
   .gallery-grid { grid-template-columns:1fr; }
   .events-gallery { grid-template-columns:repeat(2,1fr); }
