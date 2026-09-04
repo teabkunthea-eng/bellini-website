@@ -270,6 +270,16 @@ footer { background:#111; padding:56px 0 32px; }
   .page-banner { padding:32px 24px; }
   .page-banner h1 { font-size:34px; }
   .menu-nav-inner { padding:0 24px; }
+  /* the 6 category tabs scroll sideways below ~920px and the scrollbar is
+     hidden, so fade the right edge to show there is more to the right */
+  .menu-nav::after {
+    content:'';
+    position:absolute;
+    top:0; right:0; bottom:0;
+    width:56px;
+    background:linear-gradient(to right, rgba(255,255,255,0), #fff 70%);
+    pointer-events:none;
+  }
   .stats-inner { flex-wrap:wrap; }
   .stat-item { border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); width:50%; }
 }
