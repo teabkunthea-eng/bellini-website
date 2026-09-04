@@ -178,7 +178,7 @@ nav {
 .events-season-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .events-season-text { background:#fff; padding:64px 56px; display:flex; flex-direction:column; justify-content:center; }
 .events-season.no-image { grid-template-columns:1fr; }
-.events-season.no-image .events-season-text { max-width:840px; margin:0 auto; }
+
 .events-closing-img { position:relative; overflow:hidden; height:460px; }
 .events-closing-img img { width:100%; height:100%; object-fit:cover; display:block; }
 .next-season { background:var(--dark); padding:72px 0; text-align:center; }
@@ -355,4 +355,12 @@ footer { background:#111; padding:56px 0 32px; }
    needs 340px and a 375px phone gives 327, so ease the size a touch. */
 @media (max-width:600px) {
   .contact-detail .cd-value { font-size:13px; }
+}
+
+/* Past event with no image: full-bleed panel, text capped to a readable
+   column. Desktop only — at tablet the cap would inset the text 6px more
+   than the neighbouring blocks. */
+@media (min-width:961px) {
+  .events-season.no-image .events-season-text { align-items:center; }
+  .events-season.no-image .events-season-text > * { width:100%; max-width:840px; }
 }
