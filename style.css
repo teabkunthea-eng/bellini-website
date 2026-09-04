@@ -227,7 +227,7 @@ nav {
 
 /* ── FOOTER ── */
 footer { background:#111; padding:56px 0 32px; }
-.footer-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:48px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.07); margin-bottom:28px; }
+.footer-grid { display:grid; grid-template-columns:1.4fr 0.7fr 1.65fr 1.1fr; gap:48px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.07); margin-bottom:28px; }
 .footer-grid > div:not(:first-child) { border-left:1px solid rgba(255,255,255,0.08); padding-left:24px; }
 .footer-brand .name { font-family:'Montserrat',sans-serif; font-size:18px; font-weight:700; color:#fff; letter-spacing:5px; }
 .footer-brand .sub  { font-size:8px; color:var(--gold); letter-spacing:3px; text-transform:uppercase; margin-top:4px; margin-bottom:16px; }
@@ -323,4 +323,22 @@ footer { background:#111; padding:56px 0 32px; }
 @media (max-width:600px) {
   .sig-overlay { padding:12px; }
   .sig-name { font-size:14px; margin-bottom:0; }
+}
+
+/* ── FOOTER SOCIAL ON PHONES ──
+   Instagram + Facebook + Telegram Group total 369px at the desktop size
+   but the column is only 327px, so they wrapped to two rows. Tightened
+   just enough to sit on one line. */
+@media (max-width:600px) {
+  .footer-social { gap:6px; }
+  .footer-social a { font-size:10px; letter-spacing:0.5px; padding:6px 10px; }
+}
+
+/* ── FOOTER ON VERY NARROW PHONES (<=360px) ──
+   Only 272px of column here, so the hours line and the social pills
+   both need another step down to stay on one line each. */
+@media (max-width:360px) {
+  .footer-col p { font-size:12px; }
+  .footer-social { gap:4px; }
+  .footer-social a { font-size:9px; letter-spacing:0.3px; padding:5px 8px; }
 }
