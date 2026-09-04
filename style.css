@@ -132,10 +132,8 @@ nav {
 .hours-block .h-time { font-size:15px; color:#fff; }
 
 /* ── ABOUT PAGE ── */
-.about-intro { display:grid; grid-template-columns:1fr 1fr; gap:0; }
-.about-intro-text { padding:80px 60px; background:#fff; }
-.about-intro-img { position:relative; min-height:480px; overflow:hidden; }
-.about-intro-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.about-intro { display:grid; grid-template-columns:1fr; gap:0; }
+.about-intro-text { padding:80px 60px; background:#fff; max-width:840px; margin:0 auto; }
 .founders-strip { background:var(--dark); padding:64px 0; text-align:center; }
 .founders-strip h2 { font-size:34px; color:#fff; margin-bottom:16px; }
 .founders-strip p { font-size:15px; color:rgba(255,255,255,0.6); max-width:600px; margin:0 auto; line-height:1.85; }
@@ -251,7 +249,7 @@ footer { background:#111; padding:56px 0 32px; }
   .hero h1 { font-size:48px; }
   .container { padding:0 24px; }
   .split, .about-intro, .events-teaser, .cocktail-strip, .events-season, .contact-grid, .res-grid { grid-template-columns:1fr; }
-  .split-img, .about-intro-img, .events-season-img { min-height:320px; }
+  .split-img, .events-season-img { min-height:320px; }
   .events-photo { min-height:300px; position:relative; }
   .events-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
   .cocktail-photo { order:1; min-height:280px; position:relative; }
