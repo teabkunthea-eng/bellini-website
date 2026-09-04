@@ -12,3 +12,6 @@
 
 # Local scratch
 *.log
+
+# Internal content editor - kept local, not deployed
+admin.html
