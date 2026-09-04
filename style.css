@@ -151,7 +151,7 @@ nav {
 .menu-nav-inner::-webkit-scrollbar { display:none; }
 .menu-tab { padding:18px 24px; font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); border-bottom:2px solid transparent; cursor:pointer; white-space:nowrap; transition:all .2s; text-decoration:none; display:block; }
 .menu-tab:hover, .menu-tab.active { color:var(--gold); border-bottom-color:var(--gold); }
-.menu-category { padding:64px 0; border-bottom:1px solid var(--border); }
+.menu-category { padding:64px 0; border-bottom:1px solid var(--border); scroll-margin-top:150px; }
 .menu-category:last-child { border-bottom:none; }
 .menu-category h2 { font-size:30px; margin-bottom:8px; color:var(--dark); }
 .menu-category .cat-note { font-size:13px; color:var(--text-muted); margin-bottom:40px; font-style:italic; }
@@ -279,7 +279,10 @@ footer { background:#111; padding:56px 0 32px; }
     width:56px;
     background:linear-gradient(to right, rgba(255,255,255,0), #fff 70%);
     pointer-events:none;
+    opacity:1;
+    transition:opacity .2s;
   }
+  .menu-nav.at-end::after { opacity:0; }
   .stats-inner { flex-wrap:wrap; }
   .stat-item { border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); width:50%; }
 }

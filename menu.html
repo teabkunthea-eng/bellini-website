@@ -337,11 +337,73 @@
     .then(function(data){
       if (data.menu)  renderMenu(data.menu);
       if (data.deals) renderDeals(data.deals);
+      document.dispatchEvent(new Event('menu:rendered'));
     })
     .catch(function(){
       var err = document.getElementById('menu-error');
       if (err) err.hidden = false;
     });
+})();
+</script>
+
+<script>
+/* Highlights the category tab for whichever section you are reading, and
+   keeps that tab scrolled into view in the horizontal strip. */
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.menu-tab'));
+  if (!tabs.length) return;
+
+  var strip = document.querySelector('.menu-nav-inner');
+  var bar   = document.querySelector('.menu-nav');
+  var byId  = {};
+  var cats  = [];
+
+  tabs.forEach(function(t){
+    var id = (t.getAttribute('href') || '').replace('#','');
+    var el = document.getElementById(id);
+    if (el) { byId[id] = t; cats.push(el); }
+  });
+  if (!cats.length) return;
+
+  var current = null;
+
+  function revealTab(tab){
+    if (!strip || strip.scrollWidth <= strip.clientWidth) return;
+    var s = strip.getBoundingClientRect(), t = tab.getBoundingClientRect();
+    if (t.left < s.left + 8)        strip.scrollBy({left: t.left - s.left - 24, behavior:'smooth'});
+    else if (t.right > s.right - 8) strip.scrollBy({left: t.right - s.right + 24, behavior:'smooth'});
+  }
+
+  function setActive(id){
+    if (id === current) return;
+    current = id;
+    tabs.forEach(function(t){ t.classList.remove('active'); });
+    var tab = byId[id];
+    if (!tab) return;
+    tab.classList.add('active');
+    revealTab(tab);
+  }
+
+  /* the section whose top has most recently passed just under the sticky bars */
+  function onScroll(){
+    var line = 160, active = cats[0];
+    cats.forEach(function(c){
+      if (c.getBoundingClientRect().top <= line) active = c;
+    });
+    setActive(active.id);
+  }
+
+  function updateFade(){
+    if (!strip || !bar) return;
+    var atEnd = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 2;
+    bar.classList.toggle('at-end', atEnd);
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  if (strip) strip.addEventListener('scroll', updateFade, {passive:true});
+  window.addEventListener('resize', updateFade);
+  document.addEventListener('menu:rendered', function(){ onScroll(); updateFade(); });
+  onScroll(); updateFade();
 })();
 </script>
 
