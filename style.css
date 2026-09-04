@@ -342,3 +342,13 @@ footer { background:#111; padding:56px 0 32px; }
   .footer-social { gap:4px; }
   .footer-social a { font-size:9px; letter-spacing:0.3px; padding:5px 8px; }
 }
+
+/* ── CONTACT LISTING BUTTONS ON PHONES ──
+   As a wrapping flex row these reflowed differently at every width.
+   Pinned to a deterministic layout: Google Maps centred on its own row,
+   TripAdvisor and Wanderlog side by side underneath. */
+@media (max-width:600px) {
+  .social-links { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .social-links .social-link { justify-content:center; text-align:center; }
+  .social-links .social-link:first-child { grid-column:1 / -1; justify-self:center; }
+}
