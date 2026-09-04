@@ -3,5 +3,4 @@ User-agent: *
 Allow: /
 
 # Point to the sitemap so Google finds all pages faster
-# UPDATE the domain below once live
 Sitemap: https://bellinicambodia.com/sitemap.xml

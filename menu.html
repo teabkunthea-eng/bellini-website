@@ -127,7 +127,7 @@
   </div>
 </div>
 
-<!-- ══ PROMO STRIP — update the discount text here if deals change ══ -->
+<!-- PROMO STRIP — rendered from content.json "deals" -->
 <div class="promo-strip">
   <div class="container">
     <div class="promos" id="promo-content"></div>
@@ -157,20 +157,6 @@
 <!-- MENU CONTENT -->
 <div class="section">
   <div class="container">
-    <!-- ============================================================
-         HOW TO UPDATE THE MENU
-         Menu content is NO LONGER edited in this file. Every dish,
-         price, tag and heading below is rendered from content.json.
-
-         To change the menu: open admin.html in your browser, make the
-         edits, download the new content.json, and replace the file in
-         this folder. Editing the HTML here will have no effect.
-
-         The one exception is the "PASTA EXTRAS" add-ons row, which has
-         no equivalent in content.json and is still hard-coded below.
-    ============================================================ -->
-
-    <!-- ── TAPAS & SALADS — edit dish names, descriptions, and prices below ── -->
     <div class="menu-category" id="starters">
       <p class="label"></p>
       <h2></h2>
@@ -178,8 +164,6 @@
       <div class="menu-items">
       </div>
     </div>
-
-    <!-- ── PASTA SECTION — edit dish names, descriptions, and prices below ── -->
     <div class="menu-category" id="pasta">
       <p class="label"></p>
       <h2></h2>
@@ -198,8 +182,6 @@
       </div>
       </div>
     </div>
-
-    <!-- ── MAINS SECTION — edit dish names, descriptions, and prices below ── -->
     <div class="menu-category" id="mains">
       <p class="label"></p>
       <h2></h2>
@@ -207,8 +189,6 @@
       <div class="menu-items">
       </div>
     </div>
-
-    <!-- ── DESSERTS SECTION — edit dish names, descriptions, and prices below ── -->
     <div class="menu-category" id="desserts">
       <p class="label"></p>
       <h2></h2>

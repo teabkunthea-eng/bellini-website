@@ -48,8 +48,3 @@ equivalent in the JSON schema and stays hard-coded — search for
 - [ ] **Google Analytics never activated** — `G-XXXXXXXXXX` is still a
       placeholder in all 7 pages.
 - [ ] **`www.bellinicambodia.com` does not resolve** — no DNS record.
-- [ ] **`guide.html` may have wrong deploy instructions.** It describes
-      Netlify drag-and-drop, but the live server reports Caddy. Confirm
-      the actual host before handing the guide to the client.
-- [ ] Stale comments in `sitemap.xml` and `robots.txt` ("UPDATE the
-      domain once live") — URLs are correct, just leftover notes.
