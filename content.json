@@ -94,7 +94,7 @@
             },
             {
               "name": "Carpaccio di Manzo (cold)",
-              "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, dressing",
+              "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing",
               "price": "$10",
               "tag": "",
               "tagStyle": ""
@@ -335,13 +335,6 @@
               "name": "Stracotto alla Fiorentina",
               "desc": "Traditional 'overcooked' ribeye beef stew",
               "price": "$16",
-              "tag": "",
-              "tagStyle": ""
-            },
-            {
-              "name": "Carpaccio di Manzo (cold)",
-              "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing",
-              "price": "$10",
               "tag": "",
               "tagStyle": ""
             },
