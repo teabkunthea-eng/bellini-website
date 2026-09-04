@@ -48,8 +48,9 @@ equivalent in the JSON schema and stays hard-coded — search for
 - [ ] **Google Analytics never activated** — `G-XXXXXXXXXX` is still a
       placeholder in all 7 pages.
 - [ ] **`www.bellinicambodia.com` does not resolve** — no DNS record.
-- [ ] **Ask Gabi to serve `404.html`.** The file deploys, but Caddy does
-      not use it automatically the way Netlify or GitHub Pages would.
+- [ ] **Configure Caddy to serve `404.html`** — ours to do once Gabi
+      grants server access. The file deploys, but Caddy does not use it
+      automatically the way Netlify or GitHub Pages would.
       Right now a missing URL returns a 404 with an empty body — a blank
       white page. The Caddyfile needs:
 
