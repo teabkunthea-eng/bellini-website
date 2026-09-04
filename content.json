@@ -59,84 +59,84 @@
           "items": [
             {
               "name": "Bruschetta al Pomodoro",
-              "desc": "Toasted bread with fresh tomato",
+              "desc": "With fresh tomatoes, extra virgin olive oil, garlic",
               "price": "$4",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegan",
+              "tagStyle": "vegan"
             },
             {
               "name": "Bruschetta alle Acciughe",
-              "desc": "Toasted bread with anchovies",
+              "desc": "With melted mozzarella over anchovies and capers",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Cheesy Garlic Bread",
-              "desc": "Warm toasted bread with garlic butter and melted cheese",
+              "desc": "Oven baked with mozzarella, oregano & garlic",
               "price": "$5",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
             },
             {
               "name": "Burrata al Pesto",
-              "desc": "Fresh burrata served with house-made basil pesto",
+              "desc": "With home-made pesto, and toasted bread",
               "price": "$9",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
             },
             {
               "name": "Panino alla Bolognese",
-              "desc": "Soft roll with slow-cooked Bolognese ragù",
+              "desc": "Crunchy baguette filled with bolognese & mozzarella",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Carpaccio di Manzo",
-              "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing",
+              "name": "Carpaccio di Manzo (cold)",
+              "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, dressing",
               "price": "$10",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Feta & Olives",
-              "desc": "Greek feta cheese with marinated olives",
+              "desc": "Salty and perfect with a drink!",
               "price": "$3.8",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
+            },
+            {
+              "name": "French Fries",
+              "desc": "Regular, cajun spices, or mozzarella",
+              "price": "$4 / $4.5 / $5",
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
             },
             {
               "name": "Shrimps alla Diavola",
-              "desc": "Spicy pan-fried shrimps in a fiery sauce",
+              "desc": "Best selling, lightly spicy!",
               "price": "$8",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Mozzarella Sticks",
-              "desc": "Golden fried mozzarella sticks",
+              "desc": "Deep fried with a spicy dip",
               "price": "$6",
-              "tag": "",
-              "tagStyle": ""
-            },
-            {
-              "name": "French Fries",
-              "desc": "Classic, with rosemary salt, or with parmesan",
-              "price": "$4 – $5",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
             },
             {
               "name": "Balsamic Salad",
-              "desc": "Fresh greens with aged balsamic dressing",
+              "desc": "Cherry tomatoes and pitted olives in balsamic vinegar",
               "price": "$4",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegan",
+              "tagStyle": "vegan"
             },
             {
               "name": "Extra Warm Bread",
-              "desc": "House-baked bread served warm",
+              "desc": "",
               "price": "$1.3",
               "tag": "",
               "tagStyle": ""
@@ -148,38 +148,45 @@
           "items": [
             {
               "name": "Italian Board",
-              "desc": "Selection of Italian cured meats, cheeses, olives and bread",
+              "desc": "8 types of Italian sliced cold cuts",
               "price": "$16",
               "tag": "Great for sharing",
               "tagStyle": ""
             },
             {
-              "name": "Italian Mixed Caprese",
-              "desc": "Mozzarella, tomato, prosciutto, salami, olives and grilled vegetables",
+              "name": "Italian Mixed Board",
+              "desc": "Italian cold cuts & cheese selection",
               "price": "$23",
               "tag": "Great for sharing",
               "tagStyle": ""
             },
             {
               "name": "Mozzarella Caprese",
-              "desc": "Fresh mozzarella, ripe tomatoes, basil, extra virgin olive oil",
+              "desc": "Mozzarella, tomato, fresh basil, extra virgin olive oil",
               "price": "$9",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
             },
             {
               "name": "Caesar Salad",
-              "desc": "Romaine lettuce, parmesan, croutons, Caesar dressing",
+              "desc": "Iceberg lettuce, crispy bacon, croutons, and a classic caesar dressing (mayo, anchovies, capers, mustard, worcester sauce, parmigiano)",
               "price": "$8",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Greek Salad",
-              "desc": "Tomatoes, cucumber, red onion, feta, kalamata olives, oregano",
+              "desc": "Tomato, cucumber, feta, olives, rocket, iceberg lettuce, yoghurt dressing",
               "price": "$8",
-              "tag": "",
-              "tagStyle": ""
+              "tag": "Vegetarian",
+              "tagStyle": "vegan"
+            },
+            {
+              "name": "Balsamic Salad",
+              "desc": "Cherry tomatoes and pitted olives in balsamic vinegar",
+              "price": "$4",
+              "tag": "Vegan",
+              "tagStyle": "vegan"
             }
           ]
         }
@@ -188,98 +195,112 @@
     "pasta": {
       "label": "House Gnocchi",
       "title": "Pasta",
-      "note": "Four gnocchi dishes made in house, alongside the Roman and Tuscan classics.",
+      "note": "Five gnocchi dishes made in house, alongside the Roman and Tuscan classics.",
       "subsections": [
         {
           "heading": "",
           "items": [
             {
               "name": "Spaghetti alla Carbonara",
-              "desc": "Italian pork cheek 'guanciale', eggs, black pepper — the real Roman way",
+              "desc": "Italian pork cheek 'guanciale', eggs, black pepper",
               "price": "$12",
               "tag": "No cream. Ever.",
               "tagStyle": ""
             },
             {
               "name": "Tagliatelle alla Bolognese",
-              "desc": "Traditional slow-cooked meat ragù sauce",
+              "desc": "Traditional slow cooked meat sauce, called ragù",
               "price": "$12",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Lasagna",
-              "desc": "Pasta layers with béchamel and ragù sauce, baked in the pan",
+              "desc": "Pasta layers, with besciamella and ragù sauce",
               "price": "$12",
               "tag": "House Classic",
               "tagStyle": ""
             },
             {
-              "name": "Gnocchi Gratinati Emiliane",
-              "desc": "Potato dumplings baked in Bolognese sauce",
+              "name": "Gnocchi Gratinati all'Emiliana",
+              "desc": "Potato dumplings baked in bolognese sauce",
+              "price": "$15",
+              "tag": "",
+              "tagStyle": ""
+            },
+            {
+              "name": "Spaghetti Garlic Shrimps",
+              "desc": "Garlic, olive oil, premium shrimps",
               "price": "$12",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Spaghetti alla Vongole (Clams)",
-              "desc": "Garlic, olive oil, fresh clams, white wine",
+              "name": "Spaghetti alle Vongole (Clams)",
+              "desc": "Clams cooked in white wine",
               "price": "$13",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Spaghetti al Nero di Seppia",
-              "desc": "Squid ink pasta with calamari in a rich seafood sauce",
+              "desc": "Salty squid ink-based sauce and calamari",
               "price": "$13",
               "tag": "Signature Dish",
               "tagStyle": ""
             },
             {
-              "name": "Gnocchi alla Pesce San Pietro",
-              "desc": "John Dory fish baked with gnocchi in garlic and white wine",
+              "name": "Spaghetti al Pesce San Pietro",
+              "desc": "White fish tossed in garlic and white wine",
               "price": "$13",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Gnocchi Sorrentina",
-              "desc": "Oven-baked gnocchi with tomato sauce and mozzarella",
+              "desc": "Potato dumplings, oven baked, with tomato and mozzarella",
               "price": "$13",
               "tag": "Vegetarian",
               "tagStyle": "vegan"
             },
             {
-              "name": "Tagliatelle Porcini Mushrooms & Truffle",
-              "desc": "Italian porcini mushrooms and black truffle sauce",
-              "price": "$15",
-              "tag": "Premium",
-              "tagStyle": "premium"
-            },
-            {
-              "name": "Spaghetti Pesto & Sun Dried Tomatoes",
-              "desc": "House-made basil pesto with sun-dried tomatoes",
-              "price": "$13",
-              "tag": "Vegan",
+              "name": "Gnocchi Gorgonzola e Noci",
+              "desc": "Potato dumplings, with Italian blue cheese and walnuts",
+              "price": "$14",
+              "tag": "Vegetarian",
               "tagStyle": "vegan"
             },
             {
-              "name": "Gnocchi Ortolana",
-              "desc": "Potato gnocchi baked with fresh oven-roasted vegetables",
-              "price": "$10",
+              "name": "Tagliatelle Porcini Mushrooms & Truffle",
+              "desc": "Incredible Italian porcini mushrooms, and black truffle shavings",
+              "price": "$15",
               "tag": "Vegan",
               "tagStyle": "vegan"
             },
             {
               "name": "Penne al Sugo",
-              "desc": "Classic slow-cooked tomato sauce",
+              "desc": "Classic tomato sauce",
               "price": "$8",
               "tag": "Vegan",
               "tagStyle": "vegan"
             },
             {
-              "name": "Spaghetti Aglio, Olio & Peperoncino",
-              "desc": "Garlic, olive oil and chilli — the original \"midnight spaghetti\"",
+              "name": "Gnocchi Ortolana",
+              "desc": "Potato dumplings, with mixed vegetables",
+              "price": "$10",
+              "tag": "Vegan",
+              "tagStyle": "vegan"
+            },
+            {
+              "name": "Gnocchi Pesto & Sun Dried Tomatoes",
+              "desc": "Potato dumplings, pesto, and sun-dried tomatoes",
+              "price": "$13",
+              "tag": "Vegan",
+              "tagStyle": "vegan"
+            },
+            {
+              "name": "Spaghetti Aglio, Olio e Peperoncino",
+              "desc": "Called 'Midnight Spaghetti', with garlic, olive oil and chilli",
               "price": "$7",
               "tag": "Vegan",
               "tagStyle": "vegan"
@@ -298,7 +319,7 @@
           "items": [
             {
               "name": "Italian Cheeseburger",
-              "desc": "150g prime beef, pickles, caramelised onions, bacon, melted provolone, french fries",
+              "desc": "150gr of prime beef, pickles, caramelized onions, bacon, melted provolone cheese, with french fries",
               "price": "$12",
               "tag": "",
               "tagStyle": ""
@@ -312,20 +333,20 @@
             },
             {
               "name": "Fritto Misto",
-              "desc": "Lightly floured deep-fried mixed seafood",
+              "desc": "Lightly floured deep-fried seafood",
               "price": "$16",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Stracotto alla Fiorentina",
-              "desc": "Traditional 'overcooked' ribeye beef stew — slow-braised Florentine style",
+              "desc": "Traditional 'overcooked' ribeye beef stew",
               "price": "$16",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Carpaccio di Manzo (Cold)",
+              "name": "Carpaccio di Manzo (cold)",
               "desc": "Thinly-sliced raw prime beef, rocket, grana flakes, citronette dressing",
               "price": "$10",
               "tag": "",
@@ -333,7 +354,7 @@
             },
             {
               "name": "Chicken Milanese",
-              "desc": "Breaded and deep-fried chicken fillet",
+              "desc": "Breaded and deep fried chicken fillet",
               "price": "$12",
               "tag": "",
               "tagStyle": ""
@@ -359,28 +380,28 @@
           "items": [
             {
               "name": "Tiramisù",
-              "desc": "Imported pavesini biscuits soaked in espresso, mascarpone cream, cocoa powder",
+              "desc": "Classic Italian dessert made with layers of coffee-soaked, imported pavesini biscuits, mascarpone, cocoa powder",
               "price": "$6.5",
               "tag": "House Recipe",
               "tagStyle": ""
             },
             {
               "name": "Panna Cotta",
-              "desc": "Smooth creamy dessert topped with chocolate, caramel, or strawberry reduction",
+              "desc": "Smooth, creamy dessert made from sweetened cream, topped with chocolate, caramel, or strawberry reduction",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Affogato",
-              "desc": "Vanilla ice cream \"drowned\" with a shot of hot espresso",
+              "desc": "Simple and delicious dessert of vanilla ice cream “drowned” with a shot of hot espresso",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Profiteroles",
-              "desc": "Light choux pastry filled with cream, topped with warm melted chocolate",
+              "desc": "Light choux pastry filled with cream and topped with warm melted chocolate",
               "price": "$5.5",
               "tag": "",
               "tagStyle": ""
@@ -427,16 +448,9 @@
             },
             {
               "name": "Classic Bellini",
-              "desc": "Peach crush, peach liqueur, prosecco — the cocktail we're named after",
+              "desc": "Peach crush, peach liqueur, prosecco",
               "price": "$6.2",
               "tag": "Signature",
-              "tagStyle": ""
-            },
-            {
-              "name": "Passion Bellini",
-              "desc": "Fresh passion juice, homemade passion purée, prosecco",
-              "price": "$6.5",
-              "tag": "",
               "tagStyle": ""
             },
             {
@@ -454,15 +468,22 @@
               "tagStyle": ""
             },
             {
+              "name": "Passion Bellini",
+              "desc": "Fresh passion juice, home made passion purée, prosecco",
+              "price": "$6.5",
+              "tag": "",
+              "tagStyle": ""
+            },
+            {
               "name": "The Martini",
-              "desc": "Gin or vodka, dry vermouth, lime juice, olives",
+              "desc": "Gin or vodka, Roku / Belvedere, dry vermouth, olives",
               "price": "$7 / $9",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Passion Martini",
-              "desc": "Vodka, fresh passion juice, homemade passion purée, lime juice",
+              "desc": "Vodka, fresh passion juice, homemade passion purée, fresh lime juice",
               "price": "$6.5",
               "tag": "",
               "tagStyle": ""
@@ -488,56 +509,56 @@
           "items": [
             {
               "name": "Negroni",
-              "desc": "Gin, Campari, sweet vermouth — stirred, not shaken",
+              "desc": "Campari, gin, sweet vermouth",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Old Fashioned",
-              "desc": "Bourbon, bitters, sugar, orange peel",
+              "desc": "Whiskey, angostura bitters, orange bitter, sugar",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Boulevardier",
-              "desc": "Bourbon, Campari, sweet vermouth",
+              "desc": "Whiskey, Campari, sweet vermouth",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Almond Sour",
-              "desc": "Amaretto, lemon juice, egg white, foam",
+              "desc": "Disaronno, lime juice, simple syrup, egg white",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Whiskey Sour",
-              "desc": "Bourbon, lemon juice, sugar syrup, egg white",
+              "desc": "Whiskey, lemon, sugar syrup, egg white",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Matcha Sour",
-              "desc": "Vodka, matcha, lemon juice, egg white",
+              "desc": "Gin, premium matcha, premium orgeat syrup, almond reduction, lime, egg white",
               "price": "$8",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Tamarind Dam",
-              "desc": "Rum, tamarind, lime, chilli rim",
+              "name": "Tamarind Jam",
+              "desc": "Gin, home made tamarind jam, cinnamon, lime juice",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Liquid Gold",
-              "desc": "Ask your bartender — Chenda's signature creation",
+              "desc": "Premium bourbon, local honey, fresh lime juice",
               "price": "$8",
               "tag": "Bartender's Favourite",
               "tagStyle": ""
@@ -549,21 +570,21 @@
           "items": [
             {
               "name": "Classic Margarita",
-              "desc": "Tequila, triple sec, fresh lime juice, salt rim",
-              "price": "$6",
-              "tag": "",
-              "tagStyle": ""
-            },
-            {
-              "name": "Cadillac Margarita",
-              "desc": "Premium tequila, Grand Marnier, fresh lime",
+              "desc": "Tequila, Cointreau, lime juice, sugar syrup",
               "price": "$7",
               "tag": "",
               "tagStyle": ""
             },
             {
+              "name": "Cadillac Margarita",
+              "desc": "Tequila, Grand Marnier, lime juice, sugar syrup",
+              "price": "$8",
+              "tag": "",
+              "tagStyle": ""
+            },
+            {
               "name": "Spicy Passion Margarita",
-              "desc": "Tequila, passion fruit, fresh chilli, lime",
+              "desc": "Tequila, Grand Marnier, fresh Mondulkiri passion juice, lime juice, chilli",
               "price": "$8",
               "tag": "",
               "tagStyle": ""
@@ -575,7 +596,7 @@
           "items": [
             {
               "name": "Virgin Spritz",
-              "desc": "Pineapple jam, fresh passion juice, lemon juice, sun-dried lemon, soda",
+              "desc": "Pineapple jam, fresh passion juice, fresh lemon juice, sun dried lemon, soda",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
@@ -620,7 +641,7 @@
           "items": [
             {
               "name": "Sangiovese",
-              "desc": "Light Italian red — pairs well with pasta and mains",
+              "desc": "Light Italian red",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
@@ -634,7 +655,7 @@
             },
             {
               "name": "Chardonnay",
-              "desc": "Crisp Italian white — great with seafood and light pasta",
+              "desc": "Crisp Italian white",
               "price": "$5",
               "tag": "",
               "tagStyle": ""
@@ -661,28 +682,28 @@
             {
               "name": "Primo Sangiovese Merlot",
               "desc": "",
-              "price": "$29",
+              "price": "$23",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Fantini Montepulciano d'Abruzzo",
               "desc": "",
-              "price": "$29",
+              "price": "$28",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Don Giovanni Chianti Classico",
+              "name": "Don Giovanni Chianti Classico Toscana",
               "desc": "",
-              "price": "$36",
+              "price": "$38",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Don Camillo Terre di Chieti",
+              "name": "Don Camillo Terre di Chieti Sangiovese Cabernet",
               "desc": "",
-              "price": "$40",
+              "price": "$42",
               "tag": "",
               "tagStyle": ""
             },
@@ -701,14 +722,14 @@
             {
               "name": "Primo Malvasia Chardonnay",
               "desc": "",
-              "price": "$32",
+              "price": "$23",
               "tag": "",
               "tagStyle": ""
             },
             {
               "name": "Fantini Trebbiano d'Abruzzo",
               "desc": "",
-              "price": "$32",
+              "price": "$28",
               "tag": "",
               "tagStyle": ""
             },
@@ -734,21 +755,21 @@
             {
               "name": "Prosecco Astoria Butterfly",
               "desc": "",
-              "price": "$28",
+              "price": "$26",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Prosecco Fantini Butterfly",
+              "name": "Prosecco Astoria Rose Butterfly",
               "desc": "",
               "price": "$30",
               "tag": "",
               "tagStyle": ""
             },
             {
-              "name": "Brand Claire Fantini",
+              "name": "Grand Cuvee Fantini",
               "desc": "",
-              "price": "$34",
+              "price": "$38",
               "tag": "",
               "tagStyle": ""
             }
@@ -772,6 +793,13 @@
               "tagStyle": ""
             },
             {
+              "name": "Corretto",
+              "desc": "Espresso with a shot of Sambuca or Grappa",
+              "price": "$3",
+              "tag": "",
+              "tagStyle": ""
+            },
+            {
               "name": "Americano",
               "desc": "",
               "price": "$2.8",
@@ -789,13 +817,6 @@
               "name": "Latte",
               "desc": "",
               "price": "$2.8",
-              "tag": "",
-              "tagStyle": ""
-            },
-            {
-              "name": "Corretto",
-              "desc": "Espresso with a shot of Sambuca or Grappa",
-              "price": "$3",
               "tag": "",
               "tagStyle": ""
             },
@@ -847,7 +868,7 @@
               "tagStyle": ""
             },
             {
-              "name": "Passion Juice (Fresh)",
+              "name": "Passion Juice (fresh)",
               "desc": "",
               "price": "$3",
               "tag": "",
