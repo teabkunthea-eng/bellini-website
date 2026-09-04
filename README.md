@@ -23,18 +23,16 @@ Then open http://localhost:8080
 | `index.html` | Homepage. Reads opening hours from `content.json`. |
 | `about.html` `menu.html` `gallery.html` `reservations.html` `contact.html` | Static pages |
 | `events.html` | Past events rendered from `content.json` |
-| `admin.html` | CMS panel — edits `content.json`, downloads the result |
 | `guide.html` | Client-facing how-to-update guide |
 | `content.json` | Editable content: `hours`, `deals`, `events`, `menu` |
 | `style.css` | All styling |
 | `images/` | Photos and logos |
 
-## How the CMS works
+## How content is edited
 
-`admin.html` edits content and downloads a new `content.json`, which you
-then replace in this folder and re-upload. It is client-side only — the
-login is a JavaScript check, not real authentication. Keep this repo
-private.
+Edit `content.json` directly — it holds the menu, deals, opening hours and
+past events. There is no admin UI; an `admin.html` editor panel existed
+earlier and was removed.
 
 `index.html` (hours), `events.html` (past events) and `menu.html` (all
 dishes, headings and the promo strip) render from `content.json`. The one
@@ -47,7 +45,6 @@ equivalent in the JSON schema and stays hard-coded — search for
 - [ ] **Deploy the current build.** The live site is an older version —
       every page differs and 14 images referenced here return 404 in
       production.
-- [ ] **`admin.html` is not deployed** (404 on live).
 - [ ] **Google Analytics never activated** — `G-XXXXXXXXXX` is still a
       placeholder in all 7 pages.
 - [ ] **`www.bellinicambodia.com` does not resolve** — no DNS record.
