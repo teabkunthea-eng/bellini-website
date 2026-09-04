@@ -177,6 +177,8 @@ nav {
 .events-season-img { position:relative; overflow:hidden; min-height:460px; }
 .events-season-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .events-season-text { background:#fff; padding:64px 56px; display:flex; flex-direction:column; justify-content:center; }
+.events-season.no-image { grid-template-columns:1fr; }
+.events-season.no-image .events-season-text { max-width:840px; margin:0 auto; }
 .events-gallery { display:grid; grid-template-columns:repeat(5,1fr); gap:2px; }
 .event-thumb { aspect-ratio:4/3; overflow:hidden; position:relative; }
 .event-thumb img { width:100%; height:100%; object-fit:cover; transition:transform .4s; }

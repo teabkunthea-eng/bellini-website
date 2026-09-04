@@ -115,8 +115,10 @@
           +(evt.text1?'<p class="subtitle">'+e(evt.text1)+'</p>':'')
           +(evt.text2?'<p class="subtitle" style="margin-top:14px">'+e(evt.text2)+'</p>':'')
           +'</div>';
-        var inner=imgLeft?imgDiv+textDiv:textDiv+imgDiv;
-        return '<div class="events-season"'+(i>0?' style="margin-top:2px"':'')+'>'+inner+'</div>';
+        var hasImg=!!evt.image;
+        var inner=hasImg?(imgLeft?imgDiv+textDiv:textDiv+imgDiv):textDiv;
+        return '<div class="events-season'+(hasImg?'':' no-image')+'"'
+          +(i>0?' style="margin-top:2px"':'')+'>'+inner+'</div>';
       }).join('');
       document.getElementById('past-events-content').innerHTML=ph;
       // Reservation block + next season
