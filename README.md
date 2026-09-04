@@ -36,15 +36,18 @@ then replace in this folder and re-upload. It is client-side only — the
 login is a JavaScript check, not real authentication. Keep this repo
 private.
 
+`index.html` (hours), `events.html` (past events) and `menu.html` (all
+dishes, headings and the promo strip) render from `content.json`. The one
+exception is the pasta "Add-ons" row in `menu.html`, which has no
+equivalent in the JSON schema and stays hard-coded — search for
+`PASTA EXTRAS`.
+
 ## Known pending items
 
 - [ ] **Deploy the current build.** The live site is an older version —
       every page differs and 14 images referenced here return 404 in
       production.
 - [ ] **`admin.html` is not deployed** (404 on live).
-- [ ] **`menu.html` does not read `content.json`.** The admin panel edits
-      `menu` and `deals`, but nothing consumes them, so those edits have
-      no effect. Only `index.html` (hours) and `events.html` are wired up.
 - [ ] **Google Analytics never activated** — `G-XXXXXXXXXX` is still a
       placeholder in all 7 pages.
 - [ ] **`www.bellinicambodia.com` does not resolve** — no DNS record.
