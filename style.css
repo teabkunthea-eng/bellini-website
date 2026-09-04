@@ -179,10 +179,6 @@ nav {
 .events-season-text { background:#fff; padding:64px 56px; display:flex; flex-direction:column; justify-content:center; }
 .events-season.no-image { grid-template-columns:1fr; }
 .events-season.no-image .events-season-text { max-width:840px; margin:0 auto; }
-.events-gallery { display:grid; grid-template-columns:repeat(5,1fr); gap:2px; }
-.event-thumb { aspect-ratio:4/3; overflow:hidden; position:relative; }
-.event-thumb img { width:100%; height:100%; object-fit:cover; transition:transform .4s; }
-.event-thumb:hover img { transform:scale(1.05); }
 .events-closing-img { position:relative; overflow:hidden; height:460px; }
 .events-closing-img img { width:100%; height:100%; object-fit:cover; display:block; }
 .next-season { background:var(--dark); padding:72px 0; text-align:center; }
@@ -254,6 +250,7 @@ footer { background:#111; padding:56px 0 32px; }
   .container { padding:0 24px; }
   .split, .about-intro, .events-teaser, .cocktail-strip, .events-season, .contact-grid, .res-grid { grid-template-columns:1fr; }
   .split-img, .events-season-img { min-height:320px; }
+  .events-closing-img { height:320px; }
   .events-photo { min-height:300px; position:relative; }
   .events-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
   .cocktail-photo { order:1; min-height:280px; position:relative; }
@@ -294,8 +291,6 @@ footer { background:#111; padding:56px 0 32px; }
   .hero h1 { font-size:clamp(24px, 8.6vw, 36px); }
   .full-photo .overlay-content h2 { font-size:32px; }
   .gallery-grid { grid-template-columns:1fr; }
-  .events-gallery { grid-template-columns:repeat(2,1fr); }
-  .events-closing-img { height:320px; }
   .gallery-item.tall { grid-row:span 1; }
   .footer-grid { grid-template-columns:1fr; }
   .footer-grid > div:not(:first-child) { border-left:none; padding-left:0; }
